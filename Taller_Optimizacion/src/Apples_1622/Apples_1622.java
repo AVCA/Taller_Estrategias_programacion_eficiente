@@ -24,7 +24,7 @@ public class Apples_1622 {
 			if(suma%2==0) System.out.println(par);
 			else System.out.println(impar);
 		}
-		// ========================================
+		// ======================================== 
 		time_end = System.nanoTime();
 		tiempo_ejecucion = time_end - time_start;
 		System.out.println("Tiempos de ejecucion: " + (int) ((tiempo_ejecucion / 1e6) * 0.001) + "s");
