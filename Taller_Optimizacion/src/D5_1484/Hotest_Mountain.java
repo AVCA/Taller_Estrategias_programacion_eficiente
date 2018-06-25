@@ -1,4 +1,4 @@
-package Hotest_Mountain_1484;
+package D5_1484;
 
 import java.util.Scanner;
 

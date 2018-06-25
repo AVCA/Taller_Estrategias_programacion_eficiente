@@ -1,4 +1,4 @@
-package Fibonacci_Terms_1848;
+package D3_1848;
 
 import java.util.Scanner;
 

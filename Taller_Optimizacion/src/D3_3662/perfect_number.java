@@ -1,4 +1,4 @@
-package Federation_Favorites_3662;
+package D3_3662;
 
 import java.util.Scanner;
 

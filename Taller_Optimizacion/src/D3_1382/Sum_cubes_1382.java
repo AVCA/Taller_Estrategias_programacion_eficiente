@@ -1,4 +1,4 @@
-package Sum_of_Cubes_1382;
+package D3_1382;
 
 public class Sum_cubes_1382 {
 

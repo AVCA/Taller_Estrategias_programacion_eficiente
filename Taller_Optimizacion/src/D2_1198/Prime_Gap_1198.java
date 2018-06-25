@@ -1,4 +1,4 @@
-package Busqueda_exhaustiva_1198;
+package D2_1198;
 
 public class Prime_Gap_1198 {
 
@@ -19,9 +19,7 @@ public class Prime_Gap_1198 {
 	}
 
 	public static void main(String[] args) {
-		// Problema 1198
-		// 11 es primo debe de dar 0
-		int n = 11;
+		int n = 10;
 		int l = n;
 		int longitud = 0;
 		if (!esPrimo(n)) {

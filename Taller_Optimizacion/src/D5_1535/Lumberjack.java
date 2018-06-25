@@ -1,4 +1,4 @@
-package Lumberjack_Sequencing_1535;
+package D5_1535;
 
 import java.util.Scanner;
 

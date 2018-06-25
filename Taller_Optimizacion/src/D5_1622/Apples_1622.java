@@ -1,4 +1,4 @@
-package Apples_1622;
+package D5_1622;
 import java.util.Scanner;
 
 public class Apples_1622 {

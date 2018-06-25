@@ -1,4 +1,4 @@
-package broken_Strings_1840;
+package H_1840;
 
 import java.util.Scanner;
 

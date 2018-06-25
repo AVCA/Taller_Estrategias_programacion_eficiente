@@ -1,4 +1,4 @@
-package Cuantos_Primos_dividen_3274;
+package D2_3274;
 
 import java.util.Scanner;
 
