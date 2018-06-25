@@ -15,7 +15,7 @@ public class Watching_the_Clock {
 		}
 		for(int i=0;i<T;i++) {
 			int j=0;
-			while(M[i]>2) {		
+			while(M[i]>=2) {		
 				M[i]/=2;
 				j++;
 			}
