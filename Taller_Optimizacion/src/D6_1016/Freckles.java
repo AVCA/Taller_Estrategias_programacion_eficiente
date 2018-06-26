@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class Freckles {
 
 	static nodo nodos[];
-	static double matriz_adyacencia[][];
-	static double valor_minimo=Double.MAX_VALUE;
-	static double minimo=Double.MAX_VALUE;
+	static double x[][];
 
 	public static class nodo {
 		double x, y;
@@ -22,15 +20,41 @@ public class Freckles {
 		for (int i = 0; i < nodos.length; i++) {
 			for (int j = 0; j < nodos.length; j++) {
 				if(i==j) {
-					matriz_adyacencia[i][j]=Double.MAX_VALUE;
+					x[i][j]=Double.MAX_VALUE;
 				}
 				else {
-					matriz_adyacencia[i][j]=euclidiana(i,j);
+					x[i][j]=euclidiana(i,j);
 				}
-				System.out.println(i+"|"+j+":"+matriz_adyacencia[i][j]);
-				if(matriz_adyacencia[i][j])
+				System.out.println(i+"|"+j+":"+x[i][j]);
 			}
 		}
+	}
+	
+	public static void PRIM() {
+		int n=nodos.length;
+		int u[] = new int[n];
+		u[0]=1;
+		int nodo=0;
+		int agregados=1;
+		double total=0;	
+		while(agregados<n){
+			Double min=Double.MAX_VALUE;
+			for(int i=0;i<n;i++){
+				if(u[i]==1)
+				{
+					for(int j=0;j<n;j++){
+						if(u[j]!=1 && x[i][j]<min){
+							min= x[i][j];
+							nodo=j;
+						}
+					}
+				}
+			}
+			total+=min;
+			u[nodo]=1;
+			agregados++;
+		}
+		System.out.println(total);
 	}
 	
 	public static double euclidiana(int i, int j) {
@@ -42,14 +66,14 @@ public class Freckles {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		nodos = new nodo[n];
-		matriz_adyacencia = new double[n][n];
+		x = new double[n][n];
 		for (int i = 0; i < n; i++) {
 			double x = sc.nextDouble();
 			double y = sc.nextDouble();
 			nodos[i] = new nodo(x, y);
 		}
 		distancia_euclidiana();
-
+		PRIM();
 	}
 
 }
