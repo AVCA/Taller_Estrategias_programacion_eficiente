@@ -1,5 +1,6 @@
 package D6_1016;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Freckles {
@@ -25,7 +26,6 @@ public class Freckles {
 				else {
 					x[i][j]=euclidiana(i,j);
 				}
-				System.out.println(i+"|"+j+":"+x[i][j]);
 			}
 		}
 	}
@@ -54,6 +54,8 @@ public class Freckles {
 			u[nodo]=1;
 			agregados++;
 		}
+		DecimalFormat df = new DecimalFormat("#.##");
+		total = Double.valueOf(df.format(total));
 		System.out.println(total);
 	}
 	
