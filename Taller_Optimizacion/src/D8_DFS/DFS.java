@@ -29,7 +29,7 @@ public class DFS {
 			padres = new int[n];
 
 			Stack<Integer> pila = new Stack<Integer>();
-			matriz = new int[n][n];
+			matriz = new int[n][n]; 
 
 			for (int i = 0; i < a; i++) {
 				int x = sc.nextInt();
