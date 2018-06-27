@@ -9,7 +9,7 @@ public class Harry_poter {
 		Scanner sc = new Scanner(System.in);
 		int T=sc.nextInt();
 		String respuesta="";
-		
+		 
 		for(int i=0;i<T;i++)
 		{
 			double n =sc.nextInt();
