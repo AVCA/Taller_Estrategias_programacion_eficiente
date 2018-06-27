@@ -18,7 +18,7 @@ public class Harry_poter {
 			if(Math.log(n)>1) {
 				respuesta+="\nRon wins";
 			}
-			else
+			else 
 			{
 				respuesta+="\nHarry wins";
 			}
