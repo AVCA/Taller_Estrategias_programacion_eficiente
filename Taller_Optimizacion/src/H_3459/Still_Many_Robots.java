@@ -13,7 +13,7 @@ public class Still_Many_Robots {
 		for(int i=2;i<21;i++) {
 			P[i]=(i*P[i-1])+1;
 			Q[i]=Q[i-1]+(i*(i*i));
-			System.out.println(i + "| P:"+P[i]+ "| Q:"+Q[i]);
+			// System.out.println(i + "| P:"+P[i]+ "| Q:"+Q[i]);
 		}
 	}
 	
